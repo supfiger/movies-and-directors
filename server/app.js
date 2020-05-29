@@ -10,6 +10,7 @@ mongoose.connect(
   "mongodb+srv://supfiger:pas123@cluster0-1rmim.mongodb.net/graphl-first-app?retryWrites=true&w=majority",
   { useUnifiedTopology: true, useNewUrlParser: true }
 );
+mongoose.set("useFindAndModify", false);
 
 app.use(
   "/graphql",
