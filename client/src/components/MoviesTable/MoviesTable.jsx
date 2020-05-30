@@ -17,25 +17,6 @@ import MoviesDialog from "../MoviesDialog/MoviesDialog";
 
 import withHocs from "./MoviesTableHoc";
 
-const movies = [
-  {
-    id: 1,
-    name: "Pulp Fiction",
-    genre: "Crime",
-    rate: 10,
-    director: { name: "Quentin Tarantino" },
-    watched: true,
-  },
-  {
-    id: 2,
-    name: "Lock, Stock and Two Smoking Barrels",
-    genre: "Crime-comedy",
-    rate: 9,
-    director: { name: "Guy Ritchie" },
-    watched: false,
-  },
-];
-
 class MoviesTable extends React.Component {
   state = {
     anchorEl: null,
@@ -72,10 +53,8 @@ class MoviesTable extends React.Component {
 
   render() {
     const { anchorEl, openDialog, data: activeElem = {} } = this.state;
-
-    const { classes } = this.props;
-
-    console.log("this.props.data", this.props.data);
+    const { classes, data = {} } = this.props;
+    const { movies = [] } = data;
 
     return (
       <>
@@ -99,40 +78,43 @@ class MoviesTable extends React.Component {
             <TableBody>
               {movies.map((movie) => {
                 return (
-                  <TableRow key={movie.id}>
-                    <TableCell component="th" scope="row">
-                      {movie.name}
-                    </TableCell>
-                    <TableCell>{movie.genre}</TableCell>
-                    <TableCell align="right">{movie.rate}</TableCell>
-                    <TableCell>{movie.director.name}</TableCell>
-                    <TableCell>
-                      <Checkbox checked={movie.watched} disabled />
-                    </TableCell>
-                    <TableCell align="right">
-                      <>
-                        <IconButton
-                          color="inherit"
-                          onClick={(e) => this.handleClick(e, movie)}
-                        >
-                          <MoreIcon />
-                        </IconButton>
-                        <Menu
-                          id="simple-menu"
-                          anchorEl={anchorEl}
-                          open={Boolean(anchorEl)}
-                          onClose={this.handleClose}
-                        >
-                          <MenuItem onClick={this.handleEdit}>
-                            <CreateIcon /> Edit
-                          </MenuItem>
-                          <MenuItem onClick={this.handleDelete}>
-                            <DeleteIcon /> Delete
-                          </MenuItem>
-                        </Menu>
-                      </>
-                    </TableCell>
-                  </TableRow>
+                  movie &&
+                  movie.director && (
+                    <TableRow key={movie.id}>
+                      <TableCell component="th" scope="row">
+                        {movie.name}
+                      </TableCell>
+                      <TableCell>{movie.genre}</TableCell>
+                      <TableCell align="right">{movie.rate}</TableCell>
+                      <TableCell>{movie.director.name}</TableCell>
+                      <TableCell>
+                        <Checkbox checked={movie.watched} disabled />
+                      </TableCell>
+                      <TableCell align="right">
+                        <>
+                          <IconButton
+                            color="inherit"
+                            onClick={(e) => this.handleClick(e, movie)}
+                          >
+                            <MoreIcon />
+                          </IconButton>
+                          <Menu
+                            id="simple-menu"
+                            anchorEl={anchorEl}
+                            open={Boolean(anchorEl)}
+                            onClose={this.handleClose}
+                          >
+                            <MenuItem onClick={this.handleEdit}>
+                              <CreateIcon /> Edit
+                            </MenuItem>
+                            <MenuItem onClick={this.handleDelete}>
+                              <DeleteIcon /> Delete
+                            </MenuItem>
+                          </Menu>
+                        </>
+                      </TableCell>
+                    </TableRow>
+                  )
                 );
               })}
             </TableBody>
