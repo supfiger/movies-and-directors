@@ -7,6 +7,10 @@ import { ApolloProvider } from "react-apollo";
 
 const client = new ApolloClient({
   uri: "http://localhost:3005/graphql",
+  onError: ({ networkError, graphQLErrors }) => {
+    console.log("graphQLErrors", graphQLErrors);
+    console.log("networkError", networkError);
+  },
 });
 
 class App extends Component {
