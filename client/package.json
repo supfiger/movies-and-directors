@@ -1,6 +1,6 @@
 {
   "name": "application",
-  "homepage": "http://supfiger.github.io/movies-and-directors",
+  "homepage": "https://supfiger.github.io/movies-and-directors/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
