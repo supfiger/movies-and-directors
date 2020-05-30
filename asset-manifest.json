@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/apps/movies-and-directors/static/css/main.0466dad6.chunk.css",
+    "main.js": "/apps/movies-and-directors/static/js/main.38ef9e5f.chunk.js",
+    "main.js.map": "/apps/movies-and-directors/static/js/main.38ef9e5f.chunk.js.map",
+    "runtime-main.js": "/apps/movies-and-directors/static/js/runtime-main.b85e161d.js",
+    "runtime-main.js.map": "/apps/movies-and-directors/static/js/runtime-main.b85e161d.js.map",
+    "static/js/2.8a0d21e3.chunk.js": "/apps/movies-and-directors/static/js/2.8a0d21e3.chunk.js",
+    "static/js/2.8a0d21e3.chunk.js.map": "/apps/movies-and-directors/static/js/2.8a0d21e3.chunk.js.map",
+    "index.html": "/apps/movies-and-directors/index.html",
+    "precache-manifest.59fc5acf89bff702d10b958a3e79dcbc.js": "/apps/movies-and-directors/precache-manifest.59fc5acf89bff702d10b958a3e79dcbc.js",
+    "service-worker.js": "/apps/movies-and-directors/service-worker.js",
+    "static/css/main.0466dad6.chunk.css.map": "/apps/movies-and-directors/static/css/main.0466dad6.chunk.css.map",
+    "static/js/2.8a0d21e3.chunk.js.LICENSE.txt": "/apps/movies-and-directors/static/js/2.8a0d21e3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b85e161d.js",
+    "static/js/2.8a0d21e3.chunk.js",
+    "static/css/main.0466dad6.chunk.css",
+    "static/js/main.38ef9e5f.chunk.js"
+  ]
+}
