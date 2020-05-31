@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af84db15f6d09c301c71e5e4f22f2d51",
+    "revision": "f7294d15c8d294886500cff0469f4da6",
     "url": "/movies-and-directors/index.html"
   },
   {
-    "revision": "ad55d17d0578b7ffdd52",
+    "revision": "dccd8ff292f61de038dd",
     "url": "/movies-and-directors/static/css/main.0466dad6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movies-and-directors/static/js/2.8a0d21e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad55d17d0578b7ffdd52",
-    "url": "/movies-and-directors/static/js/main.c47590e4.chunk.js"
+    "revision": "dccd8ff292f61de038dd",
+    "url": "/movies-and-directors/static/js/main.c021f39e.chunk.js"
   },
   {
     "revision": "ac999e9e5b1b9e2233e3",
