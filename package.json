@@ -1,23 +1,19 @@
 {
-  "name": "movies-and-directors",
+  "name": "graphql-first-app",
   "version": "1.0.0",
-  "description": "Full Stack app using MongoDB, GraphQL, React, MaterialUI, Apollo, Mongoose.",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "concurrently": "^5.2.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm run dev\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/supfiger/movies-and-directors.git"
+    "dev": "nodemon server/app.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/supfiger/movies-and-directors/issues"
-  },
-  "homepage": "https://github.com/supfiger/movies-and-directors"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "mongoose": "^5.9.16",
+    "nodemon": "^2.0.4"
+  }
 }
