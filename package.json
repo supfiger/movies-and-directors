@@ -6,9 +6,8 @@
   "dependencies": {
     "concurrently": "^5.2.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\""
+    "start": "concurrently \"cd frontend && yarn start\" \"cd backend && yarn start\""
   },
   "repository": {
     "type": "git",
