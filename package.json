@@ -1,0 +1,23 @@
+{
+  "name": "movies-and-directors",
+  "version": "1.0.0",
+  "description": "Full Stack app using MongoDB, GraphQL, React, MaterialUI, Apollo, Mongoose.",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supfiger/movies-and-directors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supfiger/movies-and-directors/issues"
+  },
+  "homepage": "https://github.com/supfiger/movies-and-directors"
+}
